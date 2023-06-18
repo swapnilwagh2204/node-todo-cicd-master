@@ -17,3 +17,5 @@ or Run by docker compose
 
 test
 
+
+run on browser at http://<IP>:8000/todo
