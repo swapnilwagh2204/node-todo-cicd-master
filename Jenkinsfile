@@ -1,9 +1,9 @@
 pipeline {
-    agent { label "dev-server" }
+    agent { label "dev-agent" }
     stages{
         stage("Clone Code"){
             steps{
-                git url: "https://github.com/LondheShubham153/node-todo-cicd.git", branch: "master"
+                git url: "https://github.com/swapnilwagh2204/node-todo-cicd-master.git", branch: "main"
             }
         }
         stage("Build and Test"){
