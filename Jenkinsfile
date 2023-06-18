@@ -9,7 +9,7 @@ pipeline {
         stage("Build and Test"){
             steps{
                 echo "buidling and testing the app"
-                sh "docker build . -t ${env.dockerHubUser}/node-app-test-new"
+                sh "docker build . -t node-app-test-new"
             }
         }
         stage("Push to Docker Hub"){
